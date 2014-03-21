@@ -1,14 +1,15 @@
 {
   "name": "atom-rackup",
   "main": "./lib/atom-rackup",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Serve your rack applications with rackup from inside atom",
-  "activationEvents": ["atom-rackup:start"],
+  "activationEvents": [
+    "atom-rackup:start"
+  ],
   "repository": "https://github.com/gjacobrobertson/atom-rackup",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
