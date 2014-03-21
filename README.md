@@ -1,5 +1,11 @@
-# atom-rackup package
+# Atom Rackup
 
-A short description of your package.
+Serve your rack applications with rackup from inside atom. Adds 4 new commands shows the server status in the status bar
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+`atom-rackup:start` Starts the server
+
+`atom-rackup:stop` Stops the running server
+
+`atom-rackup:restart` Restarts the running server
+
+`atom-rackup:toggle` Toggles Status Bar display
