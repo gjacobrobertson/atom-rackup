@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable atom-rackup': 'atom-rackup:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-rackup'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'atom-rackup:toggle' }
+      ]
+    ]
+  }
+]
