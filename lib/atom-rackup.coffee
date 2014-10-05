@@ -14,7 +14,7 @@ module.exports =
     @updateStatus()
 
   deactivate: ->
-    @rackup.kill() if @rackup
+    @rackup.kill("SIGKILL") if @rackup
     @atomRackupView.destroy()
 
   serialize: ->
@@ -29,13 +29,13 @@ module.exports =
       @updateStatus()
 
   stop: ->
-    @rackup.kill() if @rackup
+    @rackup.kill("SIGKILL") if @rackup
     @updateStatus()
 
   restart: ->
     @rackup.on 'close', (code) =>
       @start()
-    @rackup.kill() if @rackup
+    @rackup.kill("SIGKILL") if @rackup
     @updateStatus()
 
   status: ->
